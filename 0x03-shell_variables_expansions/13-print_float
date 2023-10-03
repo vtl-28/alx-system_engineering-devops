@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM.{0..10}{0..10}
+printf "%.2f\n" $NUM
