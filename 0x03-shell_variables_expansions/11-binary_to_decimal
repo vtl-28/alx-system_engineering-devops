@@ -1,2 +1,2 @@
 #!/bin/bash
-bc <<< "ibase=2\n$BINARY"
+echo $((2#$BINARY))
