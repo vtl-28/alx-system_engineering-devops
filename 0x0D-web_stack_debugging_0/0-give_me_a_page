@@ -2,5 +2,5 @@
 # return a page containing Hello Holberton when querying the root of it.
 
 docker exec -it nervous_darwin /bin/bash
-service apache start
-curl 0:8080
+service apache2 start
+
