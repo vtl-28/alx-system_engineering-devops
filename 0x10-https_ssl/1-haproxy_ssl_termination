@@ -54,7 +54,7 @@ backend web_server
         balance roundrobin                                                                                                                               
         redirect scheme https code 301 if !{ ssl_fc }                                                                                                    
         server 530798-web-01 52.201.212.47:80 check                                                                                                      
-        server 530798-web-02 	3.89.160.216:80 check                                                                                                       
+        server 530798-web-02 3.89.160.216:80 check                                                                                                       
                                                                                                                                                          
 backend letsencrypt-backend                                                                                                                              
         server letsencrypt 127.0.0.1:54321
