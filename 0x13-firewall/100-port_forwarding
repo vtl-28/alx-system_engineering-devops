@@ -10,6 +10,10 @@
 
 *nat
 :PREROUTING ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+
+# Forward port 8080 to port 80
 -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 
 # Don't delete these required lines, otherwise there will be errors
